@@ -18,9 +18,9 @@ spec:
       - name: backend-feed
         image: gauravsinghaec/udagram-api-feed:v1
         envFrom:
-        - secretRef:
-          name: udagram-secret
-        - configMapRef:
-          name: udagram-config-map
+          - secretRef:
+              name: udagram-secret
+          - configMapRef:
+              name: udagram-config-map
         ports:
         - containerPort: 8080
