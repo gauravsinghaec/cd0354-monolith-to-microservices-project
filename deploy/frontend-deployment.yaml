@@ -16,6 +16,11 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: gauravsinghaec/udagram-frontend:v1
+        image: gauravsinghaec/udagram-frontend:v3
         ports:
         - containerPort: 80
+        resources:
+          requests:
+            memory: 1Gi
+          limits:
+            memory: 1.5Gi
