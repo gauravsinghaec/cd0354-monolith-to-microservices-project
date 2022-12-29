@@ -31,7 +31,7 @@ spec:
           initialDelaySeconds: 3
           periodSeconds: 3
         resources:
-          limits:
-            memory: 100Mi
           requests:
+            memory: 100Mi
+          limits:
             memory: 200Mi
