@@ -10,5 +10,5 @@ spec:
     protocol: TCP
     targetPort: 8080
   selector:
-    service: udagram-api-feed
+    app: udagram-api-feed
   type: ClusterIP
